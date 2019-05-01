@@ -359,7 +359,7 @@ k () {
                OWNER="${sv[uid]}"
                GROUP="${sv[gid]}"
             FILESIZE="${sv[size]}"
-                TEMP=$(date +"%s^%d^%b^%H:%M^%Y" -d @${mtime})
+                TEMP=$(date +"%s^%d^%b^%H:%M^%Y" -d @${sv[mtime]})
                 DATE=(${(s:^:)TEMP}) # Split date on ^
                 NAME="${sv[name]}"
       SYMLINK_TARGET="${sv[link]}"
